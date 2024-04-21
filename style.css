@@ -1,0 +1,399 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: "Alegreya", serif;
+
+  
+}
+.nanum-gothic-regular {
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+:root{
+    --principal: #A62626;
+    --secundario: #8C1127;
+    --acento: #BF8F54;
+    }
+  
+body{
+    background-color: var(--secundario);
+    color: white;
+}
+
+/*HEADER*/
+header{
+    width: 100%;
+    background-color: var(--principal);
+}
+
+.imgm{
+    margin-top: -3px;
+    margin-left: -5px;
+}
+#bmenu{
+    display: none;
+}
+header label{
+    display: block;
+    width: 2em;
+    height: 2em;
+    
+    border-right: 1px solid var(--acento);
+}
+header label:hover{
+    cursor: pointer;
+    background-color: var(--secundario);
+}
+.menu{
+    position: absolute;
+    background-color:var(--principal);
+    width: 30%;
+    margin-left: -500px;
+    transition: all 0.5s;
+}
+.menu ul{
+    flex-direction: column;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+.menu li{
+    border-top:  0.5px solid var(--acento);
+    border-bottom:  0.5px solid var(--acento);
+    padding: 8px;
+}
+
+#bmenu:checked ~ .menu{
+    margin: 0px;
+}
+.menu li:hover{
+    background: #c3353580;
+}
+
+/* INFO INICIO*/
+
+.info{
+    background-color: var(--principal);
+    padding: 20px;
+    margin: 10px; 
+    text-align:center;
+    border-radius: 20px; 
+    border: 2px solid var(--acento);
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+/*PELIS*/
+
+.pelis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 25px;
+    border-top: 2px solid var(--acento);
+    border-bottom: 6px double var(--acento);
+    background-color: var(--principal);
+}
+.pelis2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 25px;
+    border-bottom: 6px double var(--acento);
+    background-color: var(--principal);
+}
+.pelis3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 25px;
+    background-color: var(--principal);
+    border-bottom: 2px solid var(--acento);
+}
+.imgp{
+    border: 2px solid var(--acento);
+    border-radius: 3%;
+    width: 50%;
+    height: 50%;
+    
+}
+.txtp{
+    margin: auto;
+    margin-top: 20px;
+    background-color: var(--secundario);
+    border: 1px solid var(--acento);
+    border-radius: 5%;
+    text-align: justify;
+    padding: 10px;
+}
+
+.fa-solid.fa-play{
+    margin-top: 10px;
+    font-size: 2em;
+   
+}
+.fa-solid.fa-play:hover{
+    cursor: pointer;
+    color: var(--acento);
+}
+.mas{
+   border-radius: 40px;
+    margin: 20px;
+    background-color: var(--principal);
+    border: 2px solid var(--acento);
+}
+h3{
+    padding: 30px;
+    text-align: center;
+}
+h3:hover{
+    cursor: pointer;
+    color: var(--acento);
+}
+h4{
+    padding: 20px;
+    text-align: center;
+}
+h4:hover{
+    cursor: pointer;
+    color: var(--acento);
+
+}
+/*FOOTER*/
+
+.formucontacto{
+    border-top: 2px solid var(--acento);
+    background: var(--principal);
+}
+
+.cont-horizontal{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    
+}
+
+.cont-vertical{
+    
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    padding: 1em;
+}
+
+.ingreso{
+    background-color: var(--secundario);
+    color: white; 
+    border: 1px solid var(--acento);
+    text-align: center;
+    margin: auto;
+    max-width: 100%;
+    width: 200px;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+.textarea{
+    background-color: var(--secundario);
+    color: white; 
+    border: 1px solid var(--acento);
+    text-align: center;
+    margin: auto;
+    max-width: 100%;
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+.boton{
+    background-color: var(--secundario);
+    color: white;
+    border: 1px solid var(--acento);
+    border-radius: 10%;
+    margin-top: 20%;
+    max-width: 100%;
+     margin: auto;
+    width: 100px;
+    height: 30px;
+    font-size: 1.2em;
+}
+.boton:hover{
+    cursor: pointer;
+    color: var(--acento);
+
+}
+
+::placeholder{
+    color: white;
+}
+
+@media screen and (min-width: 650px) {
+   
+    /*HEADER*/
+   .menu{
+    position: relative;
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    background-color: var(--principal);
+    
+   }
+    .imgm{
+    display: none;
+   }
+    #bmenu{
+        display: none;
+    } 
+    header label{
+        display: none;
+    }
+   
+    .menu ul{
+        margin: 0px;
+        list-style: none;
+        padding: 0px;
+        width: 100%; 
+        display: flex; 
+        justify-content: center; 
+        text-align: center; 
+        flex-direction: row;
+    }
+    .menu li{
+        border-top: 0px;
+        border-right: 0.5px solid var(--acento);
+        padding: 0%;
+        flex-grow: 1;
+    }
+    .menu li:hover{
+        background: #b33232;
+    }
+    
+    .menu li a{
+        display:block;
+        padding: 30px;
+        color: white;
+        text-decoration: none;
+
+    }
+
+    /*INFO INICIO*/
+
+    .info{
+        max-width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+   
+    }
+    
+    h1{
+        font-size: 1.5em;
+    }
+
+    p{
+        margin-top: 10px;
+        font-size: 1em;  
+        
+    }
+
+   
+
+    /* PELIS */
+
+    .pelis{
+        max-width: 75%;
+        margin: auto;
+        display:flex;
+        flex-direction: row;
+        align-items: center;    
+        border-right: 2px solid var(--acento);
+        border-left: 2px solid var(--acento);
+        border-top: 2px solid var(--acento);
+        border-radius: 8px 8px 0px 0px;
+    }
+    .pelis2{
+        max-width: 75%;
+        margin: auto;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        border-right: 2px solid var(--acento);
+        border-left: 2px solid var(--acento);
+    }
+    .pelis3{
+        max-width: 75%;
+        margin: auto;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        border-right: 2px solid var(--acento);
+        border-left: 2px solid var(--acento) ;
+        border-bottom: 2px solid var(--acento);
+        border-radius: 0px 0px 8px 8px;
+        margin-bottom: 50px;
+    }
+    .imgp{
+        width: 500px;
+        height: 340px;
+    }
+    .txtp{
+        margin-left: 15px;
+        margin-bottom: 23px;
+    }
+   
+    .fa-solid.fa-play{
+        font-size: 2em;
+        margin-left: 20px;
+    }
+   
+    .mas{
+        max-width: 20%;
+        margin:auto;
+        margin-bottom: 50px;
+    }
+    h3{
+        
+        padding: 15px;
+        text-align: center;
+    }
+    h4{
+        padding: 15px;
+        text-align: center;
+    }
+
+    /*FOOTER*/
+
+   
+    .ingreso{
+        font-size: 1em;
+    }
+    .textarea{
+        
+        font-size: 1em;
+        margin: auto;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    
+}
